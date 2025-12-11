@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, user-scalable=no">
+    <title>Neon Racer 3D</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="three.min.js"></script>
+</head>
+
+<body>
+    <div id="game-container"></div>
+    <div id="ui-layer">
+        <button id="btn-about">ABOUT</button>
+        <div id="about-modal" class="hidden">
+            <div class="about-content">
+                <span id="close-about">&times;</span>
+                <p class="tech-stack">Built with Three.js & WebGL</p>
+                <p class="created-by">Created By</p>
+                <h1 class="author-name">Vineet Gawali</h1>
+            </div>
+        </div>
+        <div id="score">SCORE: 0</div>
+        <div id="speedometer">SPEED: 0 km/h</div>
+        <div id="start-screen">
+            <h1>NEON RACER</h1>
+            <p>Tap or Press Any Key to Start</p>
+        </div>
+        <div id="game-over" class="hidden">
+            <h1>CRASHED!</h1>
+            <p>Tap to Restart</p>
+        </div>
+        <div id="controls">
+            <button id="btn-brake">BRAKE</button>
+            <button id="btn-left">LEFT</button>
+            <button id="btn-right">RIGHT</button>
+            <button id="btn-gas">GAS</button>
+        </div>
+    </div>
+    <script src="game.js"></script>
+</body>
+
+</html>
